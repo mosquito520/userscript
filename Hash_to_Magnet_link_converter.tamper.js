@@ -2,7 +2,7 @@
 // @name		Hash_to_Magnet_link_converter
 // @namespace   http://blog.mosquito.tk
 // @homepage	http://blog.mosquito.tk/2014/05/hash-to-magnet-link-converter.html
-// @version		6
+// @version		7
 // @description	Find specific text for hash and convert it into magnet link 
 // @match		http://*.eyny.com/*
 // @match		http://ck101.com/*
@@ -11,6 +11,7 @@
 // @icon64		https://dl.dropboxusercontent.com/u/3357679/magnet_icon64.png
 // @downloadURL	http://rawgit.com/mosquito520/userscript/master/Hash_to_Magnet_link_converter.tamper.js
 // @updateURL	http://rawgit.com/mosquito520/userscript/master/Hash_to_Magnet_link_converter.tamper.js
+// @grant		none
 // ==/UserScript==
 
 var pattern = [
