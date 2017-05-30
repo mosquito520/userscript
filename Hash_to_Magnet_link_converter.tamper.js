@@ -2,13 +2,13 @@
 // @name		Hash_to_Magnet_link_converter
 // @namespace   http://blog.mosquito.tk
 // @homepage	http://blog.mosquito.tk/2014/05/hash-to-magnet-link-converter.html
-// @version		7
+// @version		8
 // @description	Find specific text for hash and convert it into magnet link 
 // @match		http://*.eyny.com/*
 // @match		http://ck101.com/*
 // @copyright	2014+, mosquito520@gmail.com
 // @author		mosquito520@gmail.com
-// @icon64		https://dl.dropboxusercontent.com/u/3357679/magnet_icon64.png
+// @icon64		https://s11.postimg.org/ljxc92qqn/magnet_icon64.png
 // @downloadURL	http://rawgit.com/mosquito520/userscript/master/Hash_to_Magnet_link_converter.tamper.js
 // @updateURL	http://rawgit.com/mosquito520/userscript/master/Hash_to_Magnet_link_converter.tamper.js
 // @grant		none
@@ -28,7 +28,7 @@ if(re.test(document.body.innerHTML))
     result = re.exec(document.body.innerHTML);
     var magnet_link = 'magnet:?xt=urn:btih:'+result[2]+'&dn='+document.title;
     
-    document.body.innerHTML= document.body.innerHTML.replace(result[0],result[0]+'<a href="'+magnet_link+'"><img src="https://dl.dropboxusercontent.com/u/3357679/Magnet_icon.png"></a>');
+    document.body.innerHTML= document.body.innerHTML.replace(result[0],result[0]+'<a href="'+magnet_link+'"><img src="https://s11.postimg.org/p4t7sava7/Magnet_icon.png"></a>');
 }
 
 function f_magnet_conv_link_clear()
