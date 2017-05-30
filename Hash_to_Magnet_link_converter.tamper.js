@@ -27,8 +27,8 @@ if(re.test(document.body.innerHTML))
     result = re.exec(document.body.innerHTML);
     result = re.exec(document.body.innerHTML);
     var magnet_link = 'magnet:?xt=urn:btih:'+result[2]+'&dn='+document.title;
-    
-    document.body.innerHTML= document.body.innerHTML.replace(result[0],result[0]+'<a href="'+magnet_link+'"><img src="https://s11.postimg.org/p4t7sava7/Magnet_icon.png"></a>');
+    var magnet_link_html = '<a href="'+magnet_link+'"><img src="https://s11.postimg.org/p4t7sava7/Magnet_icon.png" alt="Magnet link" height="32" width="32"></a>';
+    document.body.innerHTML= document.body.innerHTML.replace(result[0],result[0]+magnet_link_html);
 }
 
 function f_magnet_conv_link_clear()
