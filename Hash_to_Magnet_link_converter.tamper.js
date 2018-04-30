@@ -2,7 +2,7 @@
 // @name		Hash_to_Magnet_link_converter
 // @namespace   http://blog.mosquito.tk
 // @homepage	http://blog.mosquito.tk/2014/05/hash-to-magnet-link-converter.html
-// @version		10
+// @version		11
 // @description	Find specific text for hash and convert it into magnet link 
 // @match		http://*.eyny.com/*
 // @match		http://ck101.com/*
@@ -27,7 +27,7 @@ if(re.test(document.body.innerHTML))
     result = re.exec(document.body.innerHTML);
     result = re.exec(document.body.innerHTML);
     var magnet_link = 'magnet:?xt=urn:btih:'+result[2]+'&dn='+document.title;
-    var magnet_link_html = '<a href="'+magnet_link+'"><img src="https://s11.postimg.org/p4t7sava7/Magnet_icon.png" alt="Magnet link" height="32" width="32"></a>';
+    var magnet_link_html = '<a href="'+magnet_link+'"><img src="https://raw.githubusercontent.com/mosquito520/userscript/master/TPB_Magnet_Icon_32x32.gif" alt="Magnet link" height="32" width="32"></a>';
     document.body.innerHTML= document.body.innerHTML.replace(result[0],result[0]+magnet_link_html);
 }
 
