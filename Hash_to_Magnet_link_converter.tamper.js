@@ -2,13 +2,13 @@
 // @name		Hash_to_Magnet_link_converter
 // @namespace   http://blog.mosquito.tk
 // @homepage	http://blog.mosquito.tk/2014/05/hash-to-magnet-link-converter.html
-// @version		9
+// @version		10
 // @description	Find specific text for hash and convert it into magnet link 
 // @match		http://*.eyny.com/*
 // @match		http://ck101.com/*
 // @copyright	2014+, mosquito520@gmail.com
 // @author		mosquito520@gmail.com
-// @icon64		https://s11.postimg.org/ljxc92qqn/magnet_icon64.png
+// @icon64		https://raw.githubusercontent.com/mosquito520/userscript/master/TPB_Magnet_Icon_32x32.gif
 // @downloadURL	http://rawgit.com/mosquito520/userscript/master/Hash_to_Magnet_link_converter.tamper.js
 // @updateURL	http://rawgit.com/mosquito520/userscript/master/Hash_to_Magnet_link_converter.tamper.js
 // @grant		none
